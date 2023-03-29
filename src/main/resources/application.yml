@@ -1,0 +1,17 @@
+server:
+  port: 8180
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5532/customer
+    username: steevy
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL82Dialect
+        format_sql: true
+    show-sql: true
+  main:
+    web-application-type: servlet
